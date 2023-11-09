@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Result</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: rgb(174, 230, 230);
+
+        }
+        strong {
+            text-align: center;
+            background-color: rgb(97, 195, 195);
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+
+        }
+       
+    </style>
+</head>
+<body>
+<h1>RESULT</h1>
+{% if is_fraud == 'fraud' %}
+<strong >Result :This is not a fraud transaction</strong>
+{% else %} 
+<strong >Result :This is a fraud transaction</strong>
+{% endif %} 
+
+
+    
+</body>
+</html>
